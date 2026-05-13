@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shehab.kesug.com/sitemap.xml

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>توصيل ديزل | توريد ديزل مكة - جدة - الطائف</title>
+    <meta name="description" content="أفضل خدمة توصيل وتوريد ديزل في مكة، جدة، والطائف. نصلك أينما كنت بأفضل الأسعار وأعلى جودة على مدار 24 ساعة لجميع المعدات والمصانع.">
+    <meta name="keywords" content="توصيل ديزل, توريد ديزل, طلب ديزل, ديزل مكة, ديزل جدة, ديزل الطائف, محطة ديزل متنقلة, وايت ديزل">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #d90429;
+            --primary-dark: #ef233c;
+            --secondary: #2b2d42;
+            --light: #edf2f4;
+            --white: #ffffff;
+            --whatsapp: #25d366;
+            --shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--secondary);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        nav {
+            background: var(--white);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo svg {
+            width: 30px;
+            height: 30px;
+            fill: var(--primary);
+        }
+
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('image1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 20px;
+        }
+
+        .hero-badge {
+            background: var(--primary);
+            padding: 5px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.4s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-whatsapp {
+            background: var(--whatsapp);
+            color: var(--white);
+        }
+
+        .section {
+            padding: 100px 5%;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(217, 4, 41, 0.1);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            margin: 0 auto 25px;
+        }
+
+        .feature-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: var(--primary);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery-item {
+            border-radius: 20px;
+            overflow: hidden;
+            height: 300px;
+            box-shadow: var(--shadow);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cta-section {
+            background: var(--secondary);
+            color: var(--white);
+            border-radius: 30px;
+            padding: 60px;
+            text-align: center;
+            margin: 0 5% 100px;
+        }
+
+        .cta-phone {
+            font-size: 3rem;
+            color: var(--primary);
+            display: block;
+            margin: 20px 0;
+            text-decoration: none;
+            font-weight: 800;
+            direction: ltr;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 65px;
+            height: 65px;
+            background: var(--whatsapp);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+            z-index: 2000;
+            text-decoration: none;
+        }
+
+        .whatsapp-float svg {
+            width: 35px;
+            height: 35px;
+            fill: white;
+        }
+
+        footer {
+            background: var(--white);
+            padding: 40px 5%;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .cta-phone { font-size: 1.8rem; }
+            .section { padding: 60px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <svg viewBox="0 0 24 24"><path d="M18 10V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v10c0 .55.45 1 1 1h5v3c0 .55.45 1 1 1h1c1.1 0 2-.9 2-2v-4l2 2V10h-2zm-2 2h-2v-2h2v2zm0-4h-2V6h2v2z"/></svg>
+            <span>توريد وتوصيل ديزل</span>
+        </div>
+        <a href="tel:+966556230793" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.9rem;">اتصل الآن</a>
+    </nav>
+
+    <header id="home">
+        <div class="hero-badge">خدمة 24 ساعة</div>
+        <div class="hero-content">
+            <h1>أفضل خدمة توصيل وتوريد ديزل</h1>
+            <p>نحن الخيار الأول لتوريد الديزل في مكة، جدة، والطائف. نصلك أينما كنت بأفضل الأسعار وأعلى جودة للمصانع والمعدات والمولدات.</p>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
+                <a href="https://wa.me/966556230793?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%89%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%B7%D9%84%D8%A8%20%D8%AF%D9%8A%D8%B2%D9%84" class="btn btn-whatsapp">
+                    <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-2.335 0-4.241 1.91-4.241 4.247 0 1.155.459 2.219 1.216 3.004l-.459 1.696 1.739-.456c.531.285 1.138.451 1.787.451 2.335 0 4.241-1.91 4.241-4.247 0-2.337-1.906-4.247-4.241-4.247zm2.429 5.711c-.058.159-.33.304-.46.333-.129.03-.262.054-.857-.182-.728-.288-1.2-.994-1.236-1.041-.036-.047-.303-.406-.303-.78 0-.373.196-.556.265-.632.07-.076.154-.094.205-.094.051 0 .101.001.145.004.047.002.11.001.17.145.064.153.211.515.23.555.02.04.033.087.007.141-.026.054-.04.087-.081.134-.04.047-.084.105-.12.14-.044.044-.09.092-.039.179.051.088.227.376.488.611.337.301.62.395.708.431.088.036.141.031.193-.03.051-.06.221-.257.28-.346.058-.088.11-.073.185-.045.077.028.483.227.566.269.083.042.138.062.158.096.02.033.02.193-.038.352zM12.067 4c-4.418 0-8 3.582-8 8 0 1.57.455 3.03 1.237 4.271L4 20l3.815-1.205C9.047 19.539 10.518 20 12.067 20c4.418 0 8-3.582 8-8s-3.582-8-8-8z"/></svg>
+                    احجز الآن عبر واتساب
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="section-header">
+            <h2>خدمات توريد الديزل</h2>
+            <div style="width: 80px; height: 5px; background: var(--primary); margin: 0 auto; border-radius: 10px;"></div>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                </div>
+                <h3>توصيل سريع</h3>
+                <p>نلتزم بمواعيدنا ونصل إليكم في أسرع وقت ممكن لضمان سير أعمالكم.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                </div>
+                <h3>جودة مضمونة</h3>
+                <p>نقدم أنقى أنواع الديزل التي تحافظ على كفاءة محركاتكم ومعداتكم لفترة أطول.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                </div>
+                <h3>تغطية شاملة</h3>
+                <p>خدماتنا متوفرة في كافة أحياء مكة المكرمة، جدة، والطائف على مدار الساعة.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--white);">
+        <div class="section-header">
+            <h2>معرض الصور</h2>
+            <div style="width: 80px; height: 5px; background: var(--primary); margin: 0 auto; border-radius: 10px;"></div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="image1.jpg" alt="وايت ديزل مكة">
+            </div>
+            <div class="gallery-item">
+                <img src="image2.jpg" alt="توريد ديزل جدة">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="cta-section">
+            <h3>هل أنت جاهز للطلب؟</h3>
+            <p>اضغط على الرقم للاتصال المباشر أو تواصل معنا عبر الواتساب</p>
+            <a href="tel:+966556230793" class="cta-phone">+966 556 230 793</a>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-top: 30px;">
+                <a href="https://wa.me/966556230793?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%89%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%B7%D9%84%D8%A8%20%D8%AF%D9%8A%D8%B2%D9%84" class="btn btn-whatsapp">
+                    احجز عبر واتساب
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/966556230793?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%89%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%B7%D9%84%D8%A8%20%D8%AF%D9%8A%D8%B2%D9%84" class="whatsapp-float" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-2.335 0-4.241 1.91-4.241 4.247 0 1.155.459 2.219 1.216 3.004l-.459 1.696 1.739-.456c.531.285 1.138.451 1.787.451 2.335 0 4.241-1.91 4.241-4.247 0-2.337-1.906-4.247-4.241-4.247zm2.429 5.711c-.058.159-.33.304-.46.333-.129.03-.262.054-.857-.182-.728-.288-1.2-.994-1.236-1.041-.036-.047-.303-.406-.303-.78 0-.373.196-.556.265-.632.07-.076.154-.094.205-.094.051 0 .101.001.145.004.047.002.11.001.17.145.064.153.211.515.23.555.02.04.033.087.007.141-.026.054-.04.087-.081.134-.04.047-.084.105-.12.14-.044.044-.09.092-.039.179.051.088.227.376.488.611.337.301.62.395.708.431.088.036.141.031.193-.03.051-.06.221-.257.28-.346.058-.088.11-.073.185-.045.077.028.483.227.566.269.083.042.138.062.158.096.02.033.02.193-.038.352zM12.067 4c-4.418 0-8 3.582-8 8 0 1.57.455 3.03 1.237 4.271L4 20l3.815-1.205C9.047 19.539 10.518 20 12.067 20c4.418 0 8-3.582 8-8s-3.582-8-8-8z"/></svg>
+    </a>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 | خدمة توريد وتوصيل الديزل - مكة، جدة، الطائف</p>
+    </footer>
+
+</body>
+</html>
