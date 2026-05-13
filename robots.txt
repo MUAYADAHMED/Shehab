@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shehab.kesug.com/sitemap.xml
+Sitemap: https://shehab-topaz.vercel.app/sitemap.xml
